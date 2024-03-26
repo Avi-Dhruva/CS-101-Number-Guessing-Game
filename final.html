@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+      transition: background-color 0.5s ease;
+    }
+
+    .game-over {
+      background-color: red;
+    }
+
+    .success {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Guess the Number Game</h1>
+<p>Pick a Number Between 1 and 100</p>
+  <label for="guessInput">Enter your guess:</label>
+  <input type="number" id="guessInput">
+  <button onclick="controller.makeGuess()">Submit Guess</button>
+
+  <p id="result"></p>
+  
+<script src="final.js"></script>
+</body>
+</html>
+
